@@ -1,0 +1,29 @@
+{
+    "schema_version": "1",
+    "open_source": true,
+    "model_name": "ml20tens4",
+    "model_version": "20.4",
+    "framework": "pytorch-torchscript",
+    "license": "MIT",
+    "repo_url": "https://github.com/tomkaba/poker44-miner-ml20tens4",
+    "repo_commit": "",
+    "inference_mode": "local",
+    "training_data_statement": "Uses the gen20_tens2_10k_vote101_hardened TorchScript artifact with the decision threshold fixed at 1.0 and prod-like runtime preprocessing.",
+    "data_attestation": "This miner does not train on validator-private human data.",
+    "private_data_attestation": "This miner does not train on validator-private human data.",
+    "implementation_files": [
+        "weights/gen20_tens2_10k_vote101_hardened.ts",
+        "neurons/miner.py",
+        "start_miner.sh",
+        "poker44/__init__.py",
+        "poker44/base/miner.py",
+        "poker44/base/neuron.py",
+        "poker44/miner_heuristics.py",
+        "poker44/utils/config.py",
+        "poker44/utils/misc.py",
+        "poker44/utils/model_manifest.py",
+        "poker44/validator/synapse.py"
+    ],
+    "implementation_sha256": "70e9ae3a28f34e36919daee1c9db8451eae26c908d828c165600aafe0c214eff",
+    "notes": "ml20tens4 TorchScript neural network scorer using the gen20_tens2_10k_vote101_hardened artifact with the strict decision threshold fixed at 1.0 and prod-like runtime preprocessing."
+}
